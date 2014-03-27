@@ -1,7 +1,9 @@
 Symfony编码规范 
 ====================
-示例代码：
+**Symfony** 是一款当前非常流行的基于MVC架构的企业级PHP框架，他定义了自己的一套PHP编码规范，这套规范同样也很适用于普通的用户。
 
+
+遵循**Symfony**编码规范的示例代码：
 
 ```
 <?php
@@ -84,9 +86,9 @@ class FooBar
 命名方式
 -----------------
 
-* Use camelCase, not underscores, for variable, function and method names, arguments;
-* Use underscores for option names and parameter names;
-* Use namespaces for all classes;
+* 对于变量，函数，方法，参数等使用驼峰式命名法，即首字母小写，以后每个单词以首字母大写分割，例如（camelCase）
+* 对于可选的参数名使用下划线分割
+* 对所有的类（class）使用命名空间（namespace）
 * Prefix abstract classes with _Abstract_. Please note some early Symfony2 classes do not follow this convention and have not been renamed for backward compatibility reasons. However all new abstract classes must follow this naming convention;
 * Suffix interfaces with _Interface_;
 * Suffix traits with _Trait_;
@@ -110,5 +112,5 @@ Documentation
 
 * Add PHPDoc blocks for all classes, methods, and functions;
 * Omit the _@return_ tag if the method does not return anything;
-* The _@package_ and _@subpackage_ annotations are not used.
+* The **@package** and **@subpackage** annotations are not used.
 
