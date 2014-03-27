@@ -66,3 +66,49 @@ class FooBar
     }
 }
 ```
+
+结构
+--------------
+* 每个逗号分隔符后面添加一个空格
+* 在(==, &&, ...)操作符前后各添加一个空格
+* 在多行数组的每个数组元素后添加一个逗号（,），即使是最后一个元素也不例外
+* 在return语句前保留一个空行，除非这个return语句单独存在于一个语句块中，例如（if语句）
+* Use braces to indicate control structure body regardless of the number of statements it contains
+* Define one class per file - this does not apply to private helper classes that are not intended to be instantiated from the outside and thus are not concerned by the PSR-0 standard
+* Declare class properties before methods
+* Declare public methods first, then protected ones and finally private ones
+* Use parentheses when instantiating classes regardless of the number of arguments the constructor has
+* Exception message strings should be concatenated using sprintf
+
+
+命名方式
+-----------------
+
+* Use camelCase, not underscores, for variable, function and method names, arguments;
+* Use underscores for option names and parameter names;
+* Use namespaces for all classes;
+* Prefix abstract classes with _Abstract_. Please note some early Symfony2 classes do not follow this convention and have not been renamed for backward compatibility reasons. However all new abstract classes must follow this naming convention;
+* Suffix interfaces with _Interface_;
+* Suffix traits with _Trait_;
+* Suffix exceptions with _Exception_;
+* Use alphanumeric characters and underscores for file names;
+* Don't forget to look at the more verbose Conventions document for more subjective naming considerations
+
+
+Service Naming Conventions
+-----------------------------
+
+* A service name contains groups, separated by dots;
+* The DI alias of the bundle is the first group (e.g. _fos\_user_);
+* Use lowercase letters for service and parameter names;
+* A group name uses the underscore notation;
+* Each service has a corresponding parameter containing the class name, following the **SERVICE NAME.class** convention.
+
+
+Documentation
+----------------------
+
+* Add PHPDoc blocks for all classes, methods, and functions;
+* Omit the _@return_ tag if the method does not return anything;
+* The _@package_ and _@subpackage_ annotations are not used.
+
